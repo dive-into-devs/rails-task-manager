@@ -1,0 +1,12 @@
+<div class="container d-flex flex-column align-items-start justify-content-center">
+  <p>NEW TASK</p>
+  <div class="container d-flex flex-column justify-content-center align-items-center">
+    <%= form_with model: @task do |f| %>
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+      <%= f.label :details %>
+      <%= f.text_field :details %>
+      <%= f.submit %>
+    <% end %>
+  </div>
+</div>

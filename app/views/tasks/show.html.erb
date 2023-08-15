@@ -1,0 +1,9 @@
+<div class="container d-flex flex-column align-items-start justify-content-start mt-5">
+ <button class="btn btn-outline-primary"><%= link_to "Modify This Task", edit_path %></button>
+  <div>
+  <p><%= @task.title %></p>
+  <p><%= @task.details %></p>
+  <p class="text-dangerous"><%= @task.completed %></p>
+  </div>
+  <button class="btn btn-outline-primary"><%= link_to "Back To Task List", index_path %></button>
+</div>
